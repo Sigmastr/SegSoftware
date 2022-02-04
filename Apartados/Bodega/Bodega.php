@@ -511,6 +511,9 @@ include('../../Conexion/conexion.php');
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarBodega">
                                             Agregar Bodega
                                         </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TipoModelo">
+                                            Agregar Tipo de modelo
+                                        </button>
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
                                             Agregar Producto
                                         </button>
@@ -642,6 +645,54 @@ include('../../Conexion/conexion.php');
 
                                         </div>
                                     </div>
+
+                                    <div class="modal fade" id="TipoModelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header" style="background-color:#3f668d">
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+
+
+                                                    <form method="POST" action="../../PhP/INSERTAR_Tipomodelo.php">
+                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                            Datos de Bodega</h4>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Nombre:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" name="NombreTipo" id="NombreTipo" placeholder="Ingrese el tipo de modelo">
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                    <button type="submit" class="btn btn-primary">Agregar</button>
+                                                </div>
+                                                </form>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
                                     <div class="modal fade" id="AgregarMaterialOProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
