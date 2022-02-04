@@ -16,7 +16,7 @@ include('../../../Conexion/conexion.php');
 
 <body>
 
-    <form method="POST" class="FormBasic">
+    <form method="POST" action="Index_2.php" class="FormBasic">
         <h2 style="font-family: sans-serif;">DATOS BASICOS DEL CLIENTE</h2>
         <select class="Controles" type="text" name="Cliente">
             <?php
@@ -40,7 +40,7 @@ include('../../../Conexion/conexion.php');
         <br>
         <h2 style="font-family: sans-serif;">CARACTERISTICA DEL CLIENTE</h2>
         <h4>Tipo de instalacion:</h4>
-        <select class="Select" name="Tipo de instalación">
+        <select class="Select" name="Tipo_de_instalacion">
             <?php
             $sql = ("SELECT * FROM tipoinstalacion");
             $query = $conn->query($sql);
@@ -50,7 +50,7 @@ include('../../../Conexion/conexion.php');
             ?>
         </select>
         <h4>Areas Contratadas:</h4>
-        <select class="Select2" name="Areas Contratadas">
+        <select class="Select2" name="AreasContratadas">
             <!-- Aquí el value 0 me servirá para validar si seleccionó 1 o más áreas -->
             <option value="0">Seleccione el área</option>
             <?php
@@ -63,7 +63,7 @@ include('../../../Conexion/conexion.php');
         </select>
         <input class="Controles2" type="number" name="CantidadEmpleados" placeholder="Cantidad de Empleados">
         <h4>Areas Contratadas:</h4>
-        <select class="Select2" name="Areas Contratadas">
+        <select class="Select2" name="AreasContratadas2">
             <option value="0">Seleccione el área</option>
             <!-- Aquí el value 0 me servirá para validar si seleccionó 1 o más áreas -->
             <?php
@@ -74,9 +74,9 @@ include('../../../Conexion/conexion.php');
             }
             ?>
         </select>
-        <input class="Controles2" type="number" name="CantidadEmpleados" placeholder="Cantidad de Empleados">
+        <input class="Controles2" type="number" name="CantidadEmpleados2" placeholder="Cantidad de Empleados">
         <h4>Areas Contratadas:</h4>
-        <select class="Select2" name="Areas Contratadas">
+        <select class="Select2" name="AreasContratadas3">
             <!-- Aquí el value 0 me servirá para validar si seleccionó 1 o más áreas -->
             <option value="0">Seleccione el área</option>
             <?php
@@ -87,10 +87,10 @@ include('../../../Conexion/conexion.php');
             }
             ?>
         </select>
-        <input class="Controles2" type="number" name="CantidadEmpleados" placeholder="Cantidad de Empleados">
+        <input class="Controles2" type="number" name="CantidadEmpleados3" placeholder="Cantidad de Empleados">
 
         <br>
-        <input class="Boton" type="submit" value="Siguiente Sección">
+        <input class="Boton" type="submit" value="Siguiente Sección" href="Index_2.php">
     </form>
 </body>
 

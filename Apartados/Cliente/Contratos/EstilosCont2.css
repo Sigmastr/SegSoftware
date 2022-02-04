@@ -10,9 +10,24 @@ body {
     font-family: montserrat, sans-serif, verdana;
     color: white;
 }
-
+table, th, td{
+    background:#4c5d6d;
+    width: 700px;
+    margin-left: 220px;
+    position: center;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+th, td{
+    padding: 5px;
+}
+th{
+    background-color: gray;
+}
 .FormBasic{
-	width: 600px;
+	width: 1200px;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -34,6 +49,27 @@ body {
 
 .Controles{
     width: 100%;
+    background: #4c5d6d;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-width: 0px;
+}
+.Controles2{
+    width: 20%;
+    margin-left: 60px;
+    background:  rgb(202, 202, 202);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.Controles3{
+    width: 100%;
     background: rgb(202, 202, 202);
     padding: 10px;
     border-radius: 4px;
@@ -42,30 +78,18 @@ body {
     font-family: sans-serif;
     font-size: 18px;
 }
-.Controles2{
-    width: 50%;
-    margin-left: 100px;
-    background:  rgb(202, 202, 202);
-    padding: 6px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid rgb(0, 0, 0);
-    font-family: sans-serif;
-    font-size: 16px;
-}
 
 .FormBasic h4{
     font-size: 18px;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
 }
 
 .Select{
     height: 25px;
-    margin-bottom: 20px;
-    min-width: 220px;
+    margin-bottom: 5px;
+    min-width: 200px;
     text-align: center;
-    margin-left: 170px;
     background: white;
     color: gray;
     font-size: 16px;
@@ -73,8 +97,8 @@ body {
 }
 .Select2{
     height: 25px;
-    margin-bottom: 20px;
-    min-width: 160px;
+    margin-bottom: 15px;
+    min-width: 100px;
     background: white;
     color: gray;
     text-align: center;
@@ -88,7 +112,7 @@ body {
     padding: 12px;
     position: center;
     color: white;
-    margin: 16px 170px;
+    margin: 15px 470px;
     font-size: 16px;
 }
 option{

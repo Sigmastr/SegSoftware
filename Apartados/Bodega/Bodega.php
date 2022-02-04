@@ -81,7 +81,7 @@ include('../../Conexion/conexion.php');
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="../MenuAdministrador/administrador.php" class="nav-link">
+                            <a href="#" class="nav-link ">
                                 <!-- <i class="nav-icon fas fa-tachometer-alt"></i> ícono descriptivo -->
                                 <p>
                                     Administrador
@@ -90,7 +90,7 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../MenuAdministrador/administrador.php" class="nav-link">
+                                    <a href="administrador.php" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Inicio</p>
                                     </a>
@@ -109,9 +109,55 @@ include('../../Conexion/conexion.php');
                                 </li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
-                            <a href="Bodega.php" class="nav-link active">
+                            <a href="#" class="nav-link">
+                                <!-- <i class="nav-icon fas fa-chart-pie"></i> -->
+                                <p>
+                                    Adquisiciones
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Ficha Proveedor</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Requerimiento Compra</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Orden de Compra</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Ingresar Compra</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes Específico</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cuadro Mando</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
                                 <!-- <i class="nav-icon fas fa-tree"></i> -->
                                 <p>
                                     Bodega
@@ -120,35 +166,281 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="Bodega.php" class="nav-link active">
+                                    <a href="../Bodega/Bodega.php" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Ficha Bodega</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>F-02 Devolución Bodega</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>F-03 Solicitud de Bodega</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>F-04 Otras Salidas</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>F-05 Otros ingresos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes Inventario</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes Kardex</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="nav-item">
-
-
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="../Cliente/FichaCliente.php" class="nav-link ">
+                            <a href="#" class="nav-link">
                                 <!-- <i class="nav-icon fas fa-table"></i> -->
                                 <p>
-                                    Cliente
-                                    <i class="fas fa-angle-left right "></i>
+                                    Supervisor
+                                    <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../Cliente/FichaCliente.php" class="nav-link ">
+                                    <a href="pages/tables/data.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Estado ST - SM - SD - SP
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/data.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Conformación Servicio ST - SM - SD - SP
+                                        </p>
+                                    </a>
+                                </li>
+                                <!-- <li class="nav-header">Servicio Tecnico</li> -->
+                                <li class="nav-item">
+                                    <a href="pages/tables/data.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Solicitud de ST
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Check List
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Actas de Cierre
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Guía de Servicio
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Informe Técnico
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Solicitud de Materiales
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Presupuesto
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cotización
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Conformación Servicio
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes especificos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cuadros de mando Soporte Técnico
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Correos Informativos y Alertas
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-header">Servicio Mantención</li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Conformación Servicio
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes especificos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Check List
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Actas de Cierre
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Informe Técnico
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Solicitud de Materiales
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Presupuesto
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cotización
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Conformación Servicio
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes especificos
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cuadros de mando Soporte Mantención
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Correos Informativos y Alertas
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <!-- <i class="nav-icon fas fa-table"></i> -->
+                                <p>
+                                    Cliente
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Ficha Cliente
                                         </p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="pages/tables/data.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Reportes especificos
+                                        </p>
+                                    </a>
+                                </li>
+                                <!-- <li class="nav-header">Servicio Tecnico</li> -->
+                                <li class="nav-item">
+                                    <a href="pages/tables/data.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Cuadro de Mando
+                                        </p>
+                                    </a>
+                                </li>
+
+
+
 
                             </ul>
                         </li>
@@ -172,8 +464,9 @@ include('../../Conexion/conexion.php');
 
 
 
-                    </ul> -->
+                    </ul>
                 </nav>
+
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -217,6 +510,9 @@ include('../../Conexion/conexion.php');
                                     <div class="botones" style="margin-bottom:1%; margin-top:1%">
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarBodega">
                                             Agregar Bodega
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
+                                            Agregar Producto
                                         </button>
 
 
@@ -346,93 +642,221 @@ include('../../Conexion/conexion.php');
 
                                         </div>
                                     </div>
+                                    <div class="modal fade" id="AgregarMaterialOProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header" style="background-color:#3f668d">
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+
+
+                                                    <form method="POST" action="../../PhP/INSERTAR_Bodega.php">
+                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                            Datos de Bodega</h4>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Código:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" name="Codigo" id="Codigo" placeholder="Ingrese codigo de producto">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Tipo de modelo</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="region" id="region">
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM region");
+                                                                        $query = $conn->query($sql);
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+                                                                            echo '<option value="' . $valores['Id_Region'] . '">' . $valores['Nombre'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="inputEmail5">Correo</label>
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i class="fas fa-envelope"></i>
+                                                                        </div>
+                                                                        <input type="email" class="form-control" name="Correo" id="Correo" placeholder="bodega@dominio.com">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="inputRegion">Región</label>
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                        </div>
+                                                                        <select class="form-control" name="region" id="region">
+                                                                            <?php
+                                                                            $sql = ("SELECT * FROM region");
+                                                                            $query = $conn->query($sql);
+                                                                            while ($valores = mysqli_fetch_array($query)) {
+                                                                                echo '<option value="' . $valores['Id_Region'] . '">' . $valores['Nombre'] . '</option>';
+                                                                            }
+                                                                            ?>
+                                                                        </select>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="inputCiudad">Ciudad</label>
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i class="fas fa-house-user"></i>
+                                                                        </div>
+                                                                        <select class="form-control" name="ciudad" id="ciudad">
+                                                                            <!-- php aquí -->
+                                                                            <?php
+                                                                            $sql = ("SELECT * FROM comuna");
+                                                                            $query = $conn->query($sql);
+                                                                            while ($valores = mysqli_fetch_array($query)) {
+                                                                                echo '<option value="' . $valores['id_comuna'] . '">' . $valores['Nombre_comuna'] . '</option>';
+                                                                            }
+                                                                            ?>
+                                                                        </select>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                                Datos de Contacto</h4>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label for="inputNombreEmpleado">Seleccione jefe de bodega</label>
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                        </div>
+                                                                        <select class="form-control" name="encargado" id="encargado">
+                                                                            <!-- php aquí -->
+                                                                            <?php
+                                                                            //colocar el where cargo = Jefe Bodega
+                                                                            $sql = ("SELECT * FROM empleado");
+                                                                            $query = $conn->query($sql);
+                                                                            while ($valores = mysqli_fetch_array($query)) {
+                                                                                echo '<option value="' . $valores['Rut_Empleado'] . '">' . $valores['Nombre'] . '</option>';
+                                                                            }
+                                                                            ?>
+                                                                        </select>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                            <button type="submit" class="btn btn-primary">Agregar</button>
+                                                        </div>
+                                                    </form>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body">
-                                <table id="example2" class="table table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre de Bodega</th>
-                                            <th>Dirección</th>
-                                            <th>Comuna</th>
-                                            <th>Email</th>
-                                            <th>Nombre del Encargado</th>
-                                            <th>Teléfono</th>
-
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-                                        $sql = "SELECT * FROM bodega";
-                                        //ver como mostrar el nombre en vez del cargo
-
-                                        $resultado = mysqli_query($conn, $sql);
-                                        while ($filas = mysqli_fetch_array($resultado)) {
-                                            $var = $filas['Comuna_id'];
-                                            $sql2 = "SELECT * FROM comuna where id_comuna=$var";
-                                            $resultado2 = mysqli_query($conn, $sql2);
-                                            $nombrecomu = mysqli_fetch_array($resultado2);
-                                            $var2 = $filas['Rut_Encargado'];
-                                            $sql3 = "SELECT * FROM empleado where Rut_Empleado='$var2'";
-                                            $resultado3 = mysqli_query($conn, $sql3);
-                                            $datosEmpleado = mysqli_fetch_array($resultado3);
-                                        ?>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
                                             <tr>
-                                                <td><?php echo $filas['Nombre_Bodega'] ?></td>
-                                                <td><?php echo $filas['Direccion'] ?></td>
+                                                <th>Nombre de Bodega</th>
+                                                <th>Dirección</th>
+                                                <th>Comuna</th>
+                                                <th>Email</th>
+                                                <th>Nombre del Encargado</th>
+                                                <th>Teléfono</th>
 
-
-                                                <!-- Consulta para tener el telefono del empleado y el nombre de la comuna -->
-                                                <td><?php echo $nombrecomu['Nombre_comuna'] ?></td>
-                                                <td><?php echo $filas['Email'] ?></td>
-                                                <td><?php echo $datosEmpleado['Nombre'] ?></td>
-                                                <td><?php echo $datosEmpleado['Telefono'] ?></td>
-                                                <td>
-                                                    <a href="../../CRUD/DELETE_Bodega.php?id=<?php echo $filas['Codigo_bodega'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
-                                                    <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#update_bodega<?php echo $filas['Codigo_bodega']; ?>"><i class="fas fa-edit"></i></button>
-                                                </td>
+                                                <th>Acciones</th>
                                             </tr>
-                                        <?php
-                                            include 'editarmodalbodega.php';
-                                        }
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $sql = "SELECT * FROM bodega";
+                                            //ver como mostrar el nombre en vez del cargo
 
-                                        ?>
-                                    </tbody>
-                                </table>
+                                            $resultado = mysqli_query($conn, $sql);
+                                            while ($filas = mysqli_fetch_array($resultado)) {
+                                                $var = $filas['Comuna_id'];
+                                                $sql2 = "SELECT * FROM comuna where id_comuna=$var";
+                                                $resultado2 = mysqli_query($conn, $sql2);
+                                                $nombrecomu = mysqli_fetch_array($resultado2);
+                                                $var2 = $filas['Rut_Encargado'];
+                                                $sql3 = "SELECT * FROM empleado where Rut_Empleado='$var2'";
+                                                $resultado3 = mysqli_query($conn, $sql3);
+                                                $datosEmpleado = mysqli_fetch_array($resultado3);
+                                            ?>
+                                                <tr>
+                                                    <td><?php echo $filas['Nombre_Bodega'] ?></td>
+                                                    <td><?php echo $filas['Direccion'] ?></td>
+
+
+                                                    <!-- Consulta para tener el telefono del empleado y el nombre de la comuna -->
+                                                    <td><?php echo $nombrecomu['Nombre_comuna'] ?></td>
+                                                    <td><?php echo $filas['Email'] ?></td>
+                                                    <td><?php echo $datosEmpleado['Nombre'] ?></td>
+                                                    <td><?php echo $datosEmpleado['Telefono'] ?></td>
+                                                    <td>
+                                                        <a href="../../CRUD/DELETE_Bodega.php?id=<?php echo $filas['Codigo_bodega'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
+                                                        <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#update_bodega<?php echo $filas['Codigo_bodega']; ?>"><i class="fas fa-edit"></i></button>
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                                include 'editarmodalbodega.php';
+                                            }
+
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
                             </div>
-                            <!-- /.card-body -->
                         </div>
+
+
+
+
+
+
+
                     </div>
-
-
-
-
-
-
-
+                    <!-- /.row -->
                 </div>
-                <!-- /.row -->
+                <!-- /.container-fluid -->
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.content -->
         </div>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
 
 
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <strong>Propiedad de Mline 2021
-            <a href="https://mlineseg.wixsite.com/website">Mline</a>.</strong>
-        Todos los derechos reservados
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Versión</b> 1.0
-        </div>
-    </footer>
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <strong>Propiedad de Mline 2021
+                <a href="https://mlineseg.wixsite.com/website">Mline</a>.</strong>
+            Todos los derechos reservados
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Versión</b> 1.0
+            </div>
+        </footer>
     </div>
     <!-- ./wrapper -->
 
