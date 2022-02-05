@@ -517,7 +517,7 @@ include('../../Conexion/conexion.php');
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categoria">
                                             Agregar Categoría
                                         </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subcategoria">
                                             Agregar Subcategoría
                                         </button>
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
@@ -783,7 +783,152 @@ include('../../Conexion/conexion.php');
                                                                 </div>
 
                                                             </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputCiudad">SubCategoria</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-house-user"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="subcategoria">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM subcategoria");
+                                                                        $query = $conn->query($sql);
 
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+                                                                            $var = $valores['id_Categoria'];
+                                                                            $sql2 = ("SELECT * FROM categoria WHERE id_Categoria =$var");
+                                                                            $query2 = $conn->query($sql2);
+                                                                            $valor = mysqli_fetch_array($query2);
+                                                                            if ($valores['id_Categoria'] == $valor['id_Categoria'])
+                                                                                echo '<option value="' . $valores['id_subcategoria'] . '">' . $valores['NombreSubcategoria'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <!--  fin form row -->
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Unidad de medida:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="unidadmedida">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM unidadmedida");
+                                                                        $query = $conn->query($sql);
+
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+
+                                                                            echo '<option value="' . $valores['ID_UnidadMedida'] . '">' . $valores['Nombre'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Afecto/exento: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="afectoexento">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM afectoexento");
+                                                                        $query = $conn->query($sql);
+
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+
+                                                                            echo '<option value="' . $valores['id_afectoExento'] . '">' . $valores['Nombre'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+
+                                                            <div class="form-group col-md-6">
+                                                                <label for="ListaPrecio">Seleccione el proveedor:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="listaprecios">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM listaprecios");
+                                                                        $query = $conn->query($sql);
+
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+
+                                                                            echo '<option value="' . $valores['ID_ListaPrecio'] . '">' . $valores['rut_proveedor'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputMoneda">Tipo de moneda: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                    </div>
+                                                                    <select class="form-control" name="listamonedas">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM moneda");
+                                                                        $query = $conn->query($sql);
+
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+
+                                                                            echo '<option value="' . $valores['id_moneda'] . '">' . $valores['Nombre'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- seguir -->
+                                                        </div>
+
+
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputNombreEmpleado">Alerta de Stock:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control" name="alerta" id="alerta">
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputRegion">Stock Mínimo: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control" name="stockminimo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputRegion">Valor Unitario: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-dollar-sign"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control" name="stockminimo">
+                                                                </div>
+                                                            </div>
+                                                            <!-- seguir -->
                                                         </div>
                                                 </div>
 
@@ -825,6 +970,67 @@ include('../../Conexion/conexion.php');
 
                                                         </div>
 
+
+
+                                                    </div>
+
+
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                <button type="submit" class="btn btn-primary">Agregar</button>
+                                            </div>
+                                            </form>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="subcategoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#3f668d">
+                                                <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Categoría</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+
+                                                <form method="POST" action="../../PhP/INSERTAR_subcategoria.php">
+                                                    <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                        Datos de la categoría</h4>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputNombreEmpleado">Nombre:</label>
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                </div>
+                                                                <input type="text" class="form-control" name="nombre" placeholder="Ingrese nombre de la Subcategoría">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputRegion">Seleccione Categoría</label>
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i class="fas fa-building"></i>
+                                                                </div>
+                                                                <select class="form-control" name="categoria" id="categoria">
+                                                                    <?php
+                                                                    $sql = ("SELECT * FROM categoria");
+                                                                    $query = $conn->query($sql);
+                                                                    while ($valores = mysqli_fetch_array($query)) {
+                                                                        echo '<option value="' . $valores['id_Categoria'] . '">' . $valores['Nombre'] . '</option>';
+                                                                    }
+                                                                    ?>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
 
 
                                                     </div>

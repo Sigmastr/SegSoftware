@@ -2,11 +2,12 @@
 
 include('../Conexion/conexion.php');
 
+$nombre = $_POST["nombre"];
 $categoria = $_POST["categoria"];
 
 
-$insertar = "INSERT INTO categoria(Nombre) 
-VALUES ( '$categoria')";
+$insertar = "INSERT INTO subcategoria(NombreSubcategoria,id_Categoria) 
+VALUES ( '$nombre','$categoria')";
 
 $resultado = mysqli_query($conn, $insertar);
 
