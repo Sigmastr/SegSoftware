@@ -702,7 +702,17 @@ include('../../Conexion/conexion.php');
                                 <div class="input-group-prepend">
                                   <div class="input-group-text"><i class="fas fa-building"></i>
                                   </div>
-                                  <input type="text" class="form-control" name="DirecPago" id="DirecPago" placeholder="Ingrese la dirección de pago">
+
+                                  <select class="form-control" name="DirecPago" id="DirecPago">
+                                    <?php
+                                    $sql = ("SELECT * FROM banco");
+                                    $query = $conn->query($sql);
+                                    while ($valores = mysqli_fetch_array($query)) {
+                                      echo '<option value="' . $valores['id_banco'] . '">' . $valores['Nombre_Banco'] . '</option>';
+                                    }
+                                    ?>
+
+                                  </select>
                                 </div>
 
                               </div>
