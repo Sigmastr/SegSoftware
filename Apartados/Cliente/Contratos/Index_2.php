@@ -15,7 +15,7 @@ include('../../../Conexion/conexion.php');
 </head>
 
 <body>
-    <form class="FormBasic" method="POST" action="../../../PhP/INSERTAR_proyecto.php">
+    <form class="FormBasic" method="POST" action="Index_3.php">
         <!-- Asignando datos del formulario anterior -->
         <input hidden value="<?php echo $_POST["Cliente"]; ?>">
         <input hidden value="<?php echo $_POST["FechaContrato"]; ?>">
@@ -136,7 +136,7 @@ include('../../../Conexion/conexion.php');
         </select>
         <input class="Controles3" type="text" name="ObservacionesSer3" placeholder="Alguna Observación">
         <br>
-        <input class="Boton" type="submit" value="Siguiente Sección">
+        <input class="Boton" type="submit" value="Siguiente Sección" href="Index_3.php">
     </form>
 </body>
 

@@ -10,7 +10,7 @@
             <div class="modal-body">
 
 
-                <form method="POST" action="../../PhP/INSERTAR_FichaProveedor.php">
+                <form method="POST" action="../../CRUD/Update_Proveedor.php">
                     <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
                         Datos del Proveedor</h4>
                     <?php
