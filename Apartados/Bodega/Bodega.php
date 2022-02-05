@@ -903,32 +903,47 @@ include('../../Conexion/conexion.php');
 
 
                                                         <div class="form-row">
-                                                            <div class="form-group col-md-4">
-                                                                <label for="inputNombreEmpleado">Alerta de Stock:</label>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Cantidad:</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-user"></i>
                                                                     </div>
-                                                                    <input type="number" class="form-control" name="alerta" id="alerta">
+                                                                    <input type="number" class="form-control" name="cantidad" id="Cantidad">
                                                                 </div>
 
                                                             </div>
-                                                            <div class="form-group col-md-4">
-                                                                <label for="inputRegion">Stock Mínimo: </label>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Bodega: </label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-building"></i>
                                                                     </div>
-                                                                    <input type="number" class="form-control" name="stockminimo">
+                                                                    <select class="form-control" name="listamonedas">
+                                                                        <!-- php aquí -->
+                                                                        <?php
+                                                                        $sql = ("SELECT * FROM bodega");
+                                                                        $query = $conn->query($sql);
+
+                                                                        while ($valores = mysqli_fetch_array($query)) {
+
+                                                                            echo '<option value="' . $valores['Codigo_bodega'] . '">' . $valores['Nombre_Bodega'] . '</option>';
+                                                                        }
+                                                                        ?>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group col-md-4">
-                                                                <label for="inputRegion">Valor Unitario: </label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-dollar-sign"></i>
-                                                                    </div>
-                                                                    <input type="number" class="form-control" name="stockminimo">
-                                                                </div>
-                                                            </div>
+
                                                             <!-- seguir -->
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Imagen: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-images"></i>
+                                                                    </div>
+                                                                    <input type="file" class="form-control-file" name="img">
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                 </div>
 
