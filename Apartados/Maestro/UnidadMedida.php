@@ -8,7 +8,7 @@ include('../../Conexion/conexion.php');
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sección Bodega</title>
+    <title>Maestro Software</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
     <!-- Font Awesome Icons -->
@@ -81,7 +81,7 @@ include('../../Conexion/conexion.php');
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">
+                            <a href="#" class="nav-link active">
                                 <!-- <i class="nav-icon fas fa-tachometer-alt"></i> ícono descriptivo -->
                                 <p>
                                     Administrador
@@ -90,7 +90,7 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../MenuAdministrador/administrador.php" class="nav-link ">
+                                    <a href="administrador.php" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Inicio</p>
                                     </a>
@@ -102,7 +102,7 @@ include('../../Conexion/conexion.php');
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Maestro/UnidadMedida.php" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Maestros</p>
                                     </a>
@@ -157,7 +157,7 @@ include('../../Conexion/conexion.php');
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="#" class="nav-link ">
                                 <!-- <i class="nav-icon fas fa-tree"></i> -->
                                 <p>
                                     Bodega
@@ -166,7 +166,7 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../Bodega/Bodega.php" class="nav-link active">
+                                    <a href="../Bodega/Bodega.php" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Ficha Bodega</p>
                                     </a>
@@ -220,14 +220,14 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Estado ST - SM - SD - SP
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Conformación Servicio ST - SM - SD - SP
                                         </p>
@@ -235,63 +235,63 @@ include('../../Conexion/conexion.php');
                                 </li>
                                 <!-- <li class="nav-header">Servicio Tecnico</li> -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Solicitud de ST
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Check List
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Actas de Cierre
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Guía de Servicio
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Informe Técnico
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Solicitud de Materiales
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Presupuesto
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cotización
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Conformación Servicio
                                         </p>
@@ -299,21 +299,21 @@ include('../../Conexion/conexion.php');
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reportes especificos
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cuadros de mando Soporte Técnico
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Correos Informativos y Alertas
                                         </p>
@@ -321,84 +321,84 @@ include('../../Conexion/conexion.php');
                                 </li>
                                 <li class="nav-header">Servicio Mantención</li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Conformación Servicio
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reportes especificos
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Check List
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Actas de Cierre
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Informe Técnico
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Solicitud de Materiales
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Presupuesto
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cotización
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Conformación Servicio
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reportes especificos
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cuadros de mando Soporte Mantención
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/jsgrid.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Correos Informativos y Alertas
                                         </p>
@@ -417,14 +417,14 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../Cliente/FichaCliente.php" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Ficha Cliente
                                         </p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Reportes especificos
                                         </p>
@@ -432,7 +432,7 @@ include('../../Conexion/conexion.php');
                                 </li>
                                 <!-- <li class="nav-header">Servicio Tecnico</li> -->
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cuadro de Mando
                                         </p>
@@ -479,7 +479,7 @@ include('../../Conexion/conexion.php');
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Sección Bodega</h1>
+                            <h1 class="m-0">Sección Maestro</h1>
                         </div>
                         <!-- /.col -->
 
@@ -508,20 +508,11 @@ include('../../Conexion/conexion.php');
                                     <!-- Aquí poner los botones -->
                                     <!-- Button trigger modal -->
                                     <div class="botones" style="margin-bottom:1%; margin-top:1%">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarBodega">
-                                            Agregar Bodega
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Umedida">
+                                            Agregar Unidad de Medida
                                         </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TipoModelo">
-                                            Agregar Tipo de modelo
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#categoria">
-                                            Agregar Categoría
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
-                                            Agregar Subcategoría
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AgregarMaterialOProducto">
-                                            Agregar Producto
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Moneda">
+                                            Agregar Tipo de moneda
                                         </button>
 
 
@@ -530,11 +521,13 @@ include('../../Conexion/conexion.php');
                                     <!-- Modal -->
 
 
-                                    <div class="modal fade" id="AgregarBodega" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                                    <div class="modal fade" id="Umedida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header" style="background-color:#3f668d">
-                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Unidad de medida</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -542,103 +535,21 @@ include('../../Conexion/conexion.php');
                                                 <div class="modal-body">
 
 
-                                                    <form method="POST" action="../../PhP/INSERTAR_Bodega.php">
+                                                    <form method="POST" action="../../PhP/INSERTAR_Umedida.php">
                                                         <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
-                                                            Datos de Bodega</h4>
+                                                            Unidad de Medida</h4>
                                                         <div class="form-row">
                                                             <div class="form-group col-md-6">
-                                                                <label for="inputNombreEmpleado">Nombre de Bodega</label>
+                                                                <label for="inputNombreEmpleado">Unidad:</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-user"></i>
                                                                     </div>
-                                                                    <input type="text" class="form-control" name="NombreBodega" id="NombreBodega" placeholder="Ingrese nombre de la bodega">
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputDireccion">Dirección</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
-                                                                    </div>
-                                                                    <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ingrese la dirección">
-                                                                </div>
-
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputEmail5">Correo</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-envelope"></i>
-                                                                    </div>
-                                                                    <input type="email" class="form-control" name="Correo" id="Correo" placeholder="bodega@dominio.com">
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputRegion">Región</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
-                                                                    </div>
-                                                                    <select class="form-control" name="region" id="region">
-                                                                        <?php
-                                                                        $sql = ("SELECT * FROM region");
-                                                                        $query = $conn->query($sql);
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['Id_Region'] . '">' . $valores['Nombre'] . '</option>';
-                                                                        }
-                                                                        ?>
-                                                                    </select>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputCiudad">Ciudad</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-house-user"></i>
-                                                                    </div>
-                                                                    <select class="form-control" name="ciudad" id="ciudad">
-                                                                        <!-- php aquí -->
-                                                                        <?php
-                                                                        $sql = ("SELECT * FROM comuna");
-                                                                        $query = $conn->query($sql);
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['id_comuna'] . '">' . $valores['Nombre_comuna'] . '</option>';
-                                                                        }
-                                                                        ?>
-                                                                    </select>
+                                                                    <input type="text" class="form-control" name="Umedida" placeholder="Centímetros/Metros/milímetros">
                                                                 </div>
 
                                                             </div>
                                                         </div>
 
-                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
-                                                            Datos de Contacto</h4>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputNombreEmpleado">Seleccione jefe de bodega</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
-                                                                    </div>
-                                                                    <select class="form-control" name="encargado" id="encargado">
-                                                                        <!-- php aquí -->
-                                                                        <?php
-                                                                        //colocar el where cargo = Jefe Bodega
-                                                                        $sql = ("SELECT * FROM empleado");
-                                                                        $query = $conn->query($sql);
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['Rut_Empleado'] . '">' . $valores['Nombre'] . '</option>';
-                                                                        }
-                                                                        ?>
-                                                                    </select>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -651,12 +562,11 @@ include('../../Conexion/conexion.php');
 
                                         </div>
                                     </div>
-
-                                    <div class="modal fade" id="TipoModelo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="Moneda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header" style="background-color:#3f668d">
-                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar tipo de moneda</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -664,26 +574,20 @@ include('../../Conexion/conexion.php');
                                                 <div class="modal-body">
 
 
-                                                    <form method="POST" action="../../PhP/INSERTAR_Tipomodelo.php">
+                                                    <form method="POST" action="../../PhP/INSERTAR_moneda.php">
                                                         <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
-                                                            Datos de Bodega</h4>
+                                                            Ingrese la divisa</h4>
                                                         <div class="form-row">
                                                             <div class="form-group col-md-6">
-                                                                <label for="inputNombreEmpleado">Nombre:</label>
+                                                                <label for="inputNombreEmpleado">Divisa:</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-user"></i>
                                                                     </div>
-                                                                    <input type="text" class="form-control" name="NombreTipo" id="NombreTipo" placeholder="Ingrese el tipo de modelo">
+                                                                    <input type="text" class="form-control" name="moneda" placeholder="Euro, Peso Chileno, Peso Argentino, Dolar, etc">
                                                                 </div>
 
                                                             </div>
-
-
-
                                                         </div>
-
-
-
 
                                                 </div>
                                                 <div class="modal-footer">
@@ -699,237 +603,87 @@ include('../../Conexion/conexion.php');
                                     </div>
 
 
-                                    <div class="modal fade" id="AgregarMaterialOProducto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header" style="background-color:#3f668d">
-                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
 
 
-                                                    <form method="POST" action="../../PhP/INSERTAR_Bodega.php">
-                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
-                                                            Datos de Material o producto</h4>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputNombreEmpleado">Nombre:</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
-                                                                    </div>
-                                                                    <input type="text" class="form-control" name="Codigo" id="Codigo" placeholder="Cámara video 4k...">
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputRegion">Tipo de modelo</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-building"></i>
-                                                                    </div>
-                                                                    <select class="form-control" name="modelo">
-                                                                        <?php
-                                                                        $sql = ("SELECT * FROM tipomodelo");
-                                                                        $query = $conn->query($sql);
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['id_TipoModelo'] . '">' . $valores['Nombre'] . '</option>';
-                                                                        }
-                                                                        ?>
-                                                                    </select>
-
-                                                                </div>
-
-
-                                                            </div>
-                                                            <div class="form-row">
-                                                                <div class="form-group col-md-6">
-                                                                    <label for="inputNombreEmpleado">Descripción:</label>
-                                                                    <div class="input-group-prepend">
-                                                                        <div class="input-group-text"><i class="fas fa-user"></i>
-                                                                        </div>
-                                                                        <input type="text" class="form-control" name="Descripción" id="Codigo" placeholder="Agregue una descripción del producto">
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="form-group col-md-6">
-                                                                    <label for="inputRegion">Rubro asociado: </label>
-                                                                    <div class="input-group-prepend">
-                                                                        <div class="input-group-text"><i class="fas fa-building"></i>
-                                                                        </div>
-                                                                        <input type="text" class="form-control" name="rubro" placeholder="Agregue el rubro del producto">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label for="inputCiudad">Categoria</label>
-                                                                <div class="input-group-prepend">
-                                                                    <div class="input-group-text"><i class="fas fa-house-user"></i>
-                                                                    </div>
-                                                                    <select class="form-control" name="categoria">
-                                                                        <!-- php aquí -->
-                                                                        <?php
-                                                                        $sql = ("SELECT * FROM categoria");
-                                                                        $query = $conn->query($sql);
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['id_Categoria'] . '">' . $valores['Nombre'] . '</option>';
-                                                                        }
-                                                                        ?>
-                                                                    </select>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                    <button type="submit" class="btn btn-primary">Agregar</button>
-                                                </div>
-                                                </form>
-
-
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="modal fade" id="categoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header" style="background-color:#3f668d">
-                                                <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Categoría</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-
-
-                                                <form method="POST" action="../../PhP/INSERTAR_categoria.php">
-                                                    <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
-                                                        Datos de la categoría</h4>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputNombreEmpleado">Nombre:</label>
-                                                            <div class="input-group-prepend">
-                                                                <div class="input-group-text"><i class="fas fa-user"></i>
-                                                                </div>
-                                                                <input type="text" class="form-control" name="categoria" placeholder="Ingrese nombre de la categoría">
-                                                            </div>
-
-                                                        </div>
-
-
-
-                                                    </div>
-
-
-
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                <button type="submit" class="btn btn-primary">Agregar</button>
-                                            </div>
-                                            </form>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body">
-                                <table id="example2" class="table table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre de Bodega</th>
-                                            <th>Dirección</th>
-                                            <th>Comuna</th>
-                                            <th>Email</th>
-                                            <th>Nombre del Encargado</th>
-                                            <th>Teléfono</th>
-
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-                                        $sql = "SELECT * FROM bodega";
-                                        //ver como mostrar el nombre en vez del cargo
-
-                                        $resultado = mysqli_query($conn, $sql);
-                                        while ($filas = mysqli_fetch_array($resultado)) {
-                                            $var = $filas['Comuna_id'];
-                                            $sql2 = "SELECT * FROM comuna where id_comuna=$var";
-                                            $resultado2 = mysqli_query($conn, $sql2);
-                                            $nombrecomu = mysqli_fetch_array($resultado2);
-                                            $var2 = $filas['Rut_Encargado'];
-                                            $sql3 = "SELECT * FROM empleado where Rut_Empleado='$var2'";
-                                            $resultado3 = mysqli_query($conn, $sql3);
-                                            $datosEmpleado = mysqli_fetch_array($resultado3);
-                                        ?>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
                                             <tr>
-                                                <td><?php echo $filas['Nombre_Bodega'] ?></td>
-                                                <td><?php echo $filas['Direccion'] ?></td>
-
-
-                                                <!-- Consulta para tener el telefono del empleado y el nombre de la comuna -->
-                                                <td><?php echo $nombrecomu['Nombre_comuna'] ?></td>
-                                                <td><?php echo $filas['Email'] ?></td>
-                                                <td><?php echo $datosEmpleado['Nombre'] ?></td>
-                                                <td><?php echo $datosEmpleado['Telefono'] ?></td>
-                                                <td>
-                                                    <a href="../../CRUD/DELETE_Bodega.php?id=<?php echo $filas['Codigo_bodega'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
-                                                    <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#update_bodega<?php echo $filas['Codigo_bodega']; ?>"><i class="fas fa-edit"></i></button>
-                                                </td>
+                                                <th>Unidad</th>
+                                                <th>Acciones</th>
                                             </tr>
-                                        <?php
-                                            include 'editarmodalbodega.php';
-                                        }
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $sql = "SELECT * FROM bodega";
+                                            //ver como mostrar el nombre en vez del cargo
 
-                                        ?>
-                                    </tbody>
-                                </table>
+                                            $resultado = mysqli_query($conn, $sql);
+                                            while ($filas = mysqli_fetch_array($resultado)) {
+                                                $var = $filas['Comuna_id'];
+                                                $sql2 = "SELECT * FROM comuna where id_comuna=$var";
+                                                $resultado2 = mysqli_query($conn, $sql2);
+                                                $nombrecomu = mysqli_fetch_array($resultado2);
+                                                $var2 = $filas['Rut_Encargado'];
+                                                $sql3 = "SELECT * FROM empleado where Rut_Empleado='$var2'";
+                                                $resultado3 = mysqli_query($conn, $sql3);
+                                                $datosEmpleado = mysqli_fetch_array($resultado3);
+                                            ?>
+                                                <tr>
+                                                    <td><?php echo $filas['Nombre_Bodega'] ?></td>
+                                                    <td><?php echo $filas['Direccion'] ?></td>
+
+
+                                                    <!-- Consulta para tener el telefono del empleado y el nombre de la comuna -->
+                                                    <td><?php echo $nombrecomu['Nombre_comuna'] ?></td>
+                                                    <td><?php echo $filas['Email'] ?></td>
+                                                    <td><?php echo $datosEmpleado['Nombre'] ?></td>
+                                                    <td><?php echo $datosEmpleado['Telefono'] ?></td>
+                                                    <td>
+                                                        <a href="../../CRUD/DELETE_Bodega.php?id=<?php echo $filas['Codigo_bodega'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
+                                                        <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#update_bodega<?php echo $filas['Codigo_bodega']; ?>"><i class="fas fa-edit"></i></button>
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                                include 'editarmodalbodega.php';
+                                            }
+
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
                             </div>
-                            <!-- /.card-body -->
                         </div>
+
+
+
+
+
+
+
                     </div>
-
-
-
-
-
-
-
+                    <!-- /.row -->
                 </div>
-                <!-- /.row -->
+                <!-- /.container-fluid -->
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.content -->
         </div>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+        <!-- /.content-wrapper -->
 
 
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <strong>Propiedad de Mline 2021
-            <a href="https://mlineseg.wixsite.com/website">Mline</a>.</strong>
-        Todos los derechos reservados
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Versión</b> 1.0
-        </div>
-    </footer>
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <strong>Propiedad de Mline 2021
+                <a href="https://mlineseg.wixsite.com/website">Mline</a>.</strong>
+            Todos los derechos reservados
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Versión</b> 1.0
+            </div>
+        </footer>
     </div>
     <!-- ./wrapper -->
 
