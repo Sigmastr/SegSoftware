@@ -21,16 +21,15 @@ $DirecPago = $_POST["DirecPago"];
 
 
 $insertar = "INSERT INTO proveedor(Rut,Nombre_Empresa,Actividad,Pais,Region,Ciudad,Direccion,Banco_Proveedor,NumeroCuentaProveedor,
-LineaCredito,correo,Plazopago,telefono,Representante) VALUES ('$rutProveedor','$nameProveedor','$Actividad','$pais','$region','$ciudad',
-'$direccion','$DirecPago','$nrocuenta','$LineCredit','$CorreoPago','$PPago','$telefono','$NombreRepresentante','$LineCredit','$NombreRepresentante',
-'$TipoCliente','$contrato')";
+LineaCredito,correo,Plazopago,telefono,Representante) VALUES ('$rutProveedor','$nameProveedor','$Actividad','$pais','$region','$ciudad','$direccion','$DirecPago','$nrocuenta',
+'$LineCredit','$CorreoPago','$PPago','$telefono','$NombreRepresentante')";
 
 $resultado = mysqli_query($conn, $insertar);
 
 if ($resultado) {
     echo "<script>alert('Registrado con éxito')</script>";
-    header('Location:../Apartados/Cliente/FichaCliente.php');
+    header('Location:../Apartados/Adquisiciones/FichaProveedor.php');
     die;
 } else {
-    echo 'error';
+    echo "error";
 }

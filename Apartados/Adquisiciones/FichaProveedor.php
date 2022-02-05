@@ -639,10 +639,10 @@ include('../../Conexion/conexion.php');
                                                                     <select class="form-control" name="ciudad" id="ciudad">
                                                                         <!-- php aquí -->
                                                                         <?php
-                                                                        $sql = ("SELECT * FROM comuna");
+                                                                        $sql = ("SELECT * FROM ciudad");
                                                                         $query = $conn->query($sql);
                                                                         while ($valores = mysqli_fetch_array($query)) {
-                                                                            echo '<option value="' . $valores['id_comuna'] . '">' . $valores['Nombre_comuna'] . '</option>';
+                                                                            echo '<option value="' . $valores['id_ciudad'] . '">' . $valores['Nombre_ciudad'] . '</option>';
                                                                         }
                                                                         ?>
                                                                     </select>
@@ -782,10 +782,10 @@ include('../../Conexion/conexion.php');
                                                 $query = mysqli_query($conn, $sql);
                                                 $fila = mysqli_fetch_array($query);
                                                 $var2 = $filas['Ciudad'];
-                                                $sql2 = "SELECT * FROM comuna WHERE id_comuna=$var2";
+                                                $sql2 = "SELECT * FROM ciudad WHERE id_ciudad=$var2";
                                                 $query2 = mysqli_query($conn, $sql2);
                                                 $fila2 = mysqli_fetch_array($query2);
-                                                $var = $filas['Banco_Proveedor '];
+                                                $var = $filas['Banco_Proveedor'];
                                                 $sql3 = "SELECT * FROM banco Where id_banco =$var";
                                                 $query3 = mysqli_query($conn, $sql3);
                                                 $fila3 = mysqli_fetch_array($query3);
@@ -793,20 +793,20 @@ include('../../Conexion/conexion.php');
                                                 <tr>
                                                     <td><?php echo $filas['Nombre_Empresa'] ?></td>
                                                     <td><?php echo $filas['Rut'] ?></td>
-                                                    <td><?php echo $filas['Email'] ?></td>
+                                                    <td><?php echo $filas['correo'] ?></td>
                                                     <td><?php echo $filas['telefono'] ?></td>
                                                     <td><?php echo $fila['Nombre'] ?></td>
-                                                    <td><?php echo $fila2['Nombre_comuna'] ?></td>
+                                                    <td><?php echo $fila2['Nombre_ciudad'] ?></td>
                                                     <td><?php echo $filas['Actividad'] ?></td>
                                                     <td><?php echo $filas['Representante'] ?></td>
                                                     <td><?php echo $fila3['Nombre_Banco'] ?></td>
                                                     <td>
-                                                        <a href="../../CRUD/DELETE_Cliente.php?id=<?php echo $filas['Rut'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
-                                                        <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#update_user_modal<?php echo $filas['Rut']; ?>"><i class="fas fa-edit"></i></button>
+                                                        <a href="../../CRUD/DELETE_proveedor.php?id=<?php echo $filas['Rut'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
+                                                        <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#proveedor<?php echo $filas['Rut']; ?>"><i class="fas fa-edit"></i></button>
                                                     </td>
                                                 </tr>
                                             <?php
-                                                include 'editarmodalcliente.php';
+                                                include 'EDITAR_Proveedor.php';
                                             }
                                             mysqli_close($conn);
                                             ?>
