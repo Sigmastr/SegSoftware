@@ -142,7 +142,7 @@ include('../../Conexion/conexion.php');
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="../Adquisiciones/FichaProveedor.php" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Ficha Proveedor</p>
                   </a>
