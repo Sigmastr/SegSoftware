@@ -90,7 +90,7 @@ include('../../Conexion/conexion.php');
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="administrador.php" class="nav-link ">
+                                    <a href="../MenuAdministrador/administrador.php" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Inicio</p>
                                     </a>
@@ -102,7 +102,7 @@ include('../../Conexion/conexion.php');
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../Maestro/UnidadMedida.php" class="nav-link active">
+                                    <a href="../Maestro/Maestro.php" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Maestros</p>
                                     </a>
@@ -515,7 +515,6 @@ include('../../Conexion/conexion.php');
                                             Agregar Tipo de moneda
                                         </button>
 
-
                                     </div>
 
                                     <!-- Modal -->
@@ -601,6 +600,45 @@ include('../../Conexion/conexion.php');
 
                                         </div>
                                     </div>
+                                    <div class="modal fade" id="Especialidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header" style="background-color:#3f668d">
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Especialidad</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+
+
+                                                    <form method="POST" action="../../PhP/INSERTAR_especialidad.php">
+                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                            Ingrese la especialidad</h4>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Nombre:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" name="nombre" placeholder="MANTENCIÓN SISTEMA DE CCTV...">
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                    <button type="submit" class="btn btn-primary">Agregar</button>
+                                                </div>
+                                                </form>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
 
 
 
@@ -648,6 +686,106 @@ include('../../Conexion/conexion.php');
                                                 </tr>
                                             <?php
                                                 include 'editarmodalbodega.php';
+                                            }
+
+                                            ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <!-- Aquí poner los botones -->
+                                    <!-- Button trigger modal -->
+                                    <div class="botones" style="margin-bottom:1%; margin-top:1%">
+
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Especialidad">
+                                            Agregar Especialidad
+                                        </button>
+
+
+                                    </div>
+
+                                    <!-- Modal -->
+
+
+
+
+
+
+                                    <div class="modal fade" id="Especialidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header" style="background-color:#3f668d">
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Especialidad</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+
+
+                                                    <form method="POST" action="../../PhP/INSERTAR_especialidad.php">
+                                                        <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
+                                                            Ingrese la especialidad</h4>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputNombreEmpleado">Nombre:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" name="nombre" placeholder="MANTENCIÓN SISTEMA DE CCTV...">
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                    <button type="submit" class="btn btn-primary">Agregar</button>
+                                                </div>
+                                                </form>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table id="example1" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre de especialidad</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            $sql = "SELECT * FROM especialidad";
+                                            //ver como mostrar el nombre en vez del cargo
+
+                                            $resultado = mysqli_query($conn, $sql);
+                                            while ($filas = mysqli_fetch_array($resultado)) {
+
+                                            ?>
+                                                <tr>
+                                                    <td><?php echo $filas['Nombre'] ?></td>
+
+                                                    <td>
+                                                        <a href="../../CRUD/DELETE_especialidad.php?id=<?php echo $filas['id_Especialidad'] ?>"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a>
+                                                        <button type="button" class="btn btn-primary editbtn" data-toggle="modal" data-target="#Especialidad<?php echo $filas['id_Especialidad']; ?>"><i class="fas fa-edit"></i></button>
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                                include 'editarespecialidad.php';
                                             }
 
                                             ?>

@@ -14,6 +14,4 @@ if ($resultado) {
     echo "<script>alert('Registrado con éxito')</script>";
     header('Location:../Apartados/MenuAdministrador/administrador.php ');
     die;
-} else {
-    echo $EstadoCliente;
 }

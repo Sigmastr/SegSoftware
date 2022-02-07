@@ -102,7 +102,7 @@ include('../../Conexion/conexion.php');
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Maestro/Maestro.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Maestros</p>
                                     </a>
@@ -703,7 +703,7 @@ include('../../Conexion/conexion.php');
                                         <div class="modal-dialog modal-lg" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header" style="background-color:#3f668d">
-                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Bodega</h5>
+                                                    <h5 class="modal-title" style="color:white" id="exampleModalLabel">Agregar Producto</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -711,20 +711,29 @@ include('../../Conexion/conexion.php');
                                                 <div class="modal-body">
 
 
-                                                    <form method="POST" action="../../PhP/INSERTAR_Bodega.php">
+                                                    <form method="POST" action="../../PhP/INSERTAR_MaterialProducto.php">
                                                         <h4 style="font-size:20px;font-weight:bold;margin:auto;margin-bottom:4px;border-bottom-style: solid;border-bottom-color: #00c0ef;">
                                                             Datos de Material o producto</h4>
                                                         <div class="form-row">
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputNombreEmpleado">Código:</label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" name="codigo" id="codigo" placeholder="nf4k-5">
+                                                                </div>
+
+                                                            </div>
                                                             <div class="form-group col-md-6">
                                                                 <label for="inputNombreEmpleado">Nombre:</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-user"></i>
                                                                     </div>
-                                                                    <input type="text" class="form-control" name="Codigo" id="Codigo" placeholder="Cámara video 4k...">
+                                                                    <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Cámara video 4k...">
                                                                 </div>
 
                                                             </div>
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-md-4">
                                                                 <label for="inputRegion">Tipo de modelo</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-building"></i>
@@ -749,7 +758,7 @@ include('../../Conexion/conexion.php');
                                                                     <div class="input-group-prepend">
                                                                         <div class="input-group-text"><i class="fas fa-user"></i>
                                                                         </div>
-                                                                        <input type="text" class="form-control" name="Descripción" id="Codigo" placeholder="Agregue una descripción del producto">
+                                                                        <input type="text" class="form-control" name="Descripcion" id="Descripcion" placeholder="Agregue una descripción del producto">
                                                                     </div>
 
                                                                 </div>
@@ -769,7 +778,7 @@ include('../../Conexion/conexion.php');
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-house-user"></i>
                                                                     </div>
-                                                                    <select class="form-control" name="categoria">
+                                                                    <select class="form-control" name="categoria" id="categoria">
                                                                         <!-- php aquí -->
                                                                         <?php
                                                                         $sql = ("SELECT * FROM categoria");
@@ -781,28 +790,15 @@ include('../../Conexion/conexion.php');
                                                                     </select>
 
                                                                 </div>
-
+                                                                <!-- ACÁ -->
                                                             </div>
                                                             <div class="form-group col-md-6">
                                                                 <label for="inputCiudad">SubCategoria</label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-house-user"></i>
                                                                     </div>
-                                                                    <select class="form-control" name="subcategoria">
-                                                                        <!-- php aquí -->
-                                                                        <?php
-                                                                        $sql = ("SELECT * FROM subcategoria");
-                                                                        $query = $conn->query($sql);
+                                                                    <select class="form-control" id="subcategoria" name="subcategoria">
 
-                                                                        while ($valores = mysqli_fetch_array($query)) {
-                                                                            $var = $valores['id_Categoria'];
-                                                                            $sql2 = ("SELECT * FROM categoria WHERE id_Categoria =$var");
-                                                                            $query2 = $conn->query($sql2);
-                                                                            $valor = mysqli_fetch_array($query2);
-                                                                            if ($valores['id_Categoria'] == $valor['id_Categoria'])
-                                                                                echo '<option value="' . $valores['id_subcategoria'] . '">' . $valores['NombreSubcategoria'] . '</option>';
-                                                                        }
-                                                                        ?>
                                                                     </select>
 
                                                                 </div>
@@ -917,7 +913,7 @@ include('../../Conexion/conexion.php');
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-building"></i>
                                                                     </div>
-                                                                    <select class="form-control" name="listamonedas">
+                                                                    <select class="form-control" name="bodega">
                                                                         <!-- php aquí -->
                                                                         <?php
                                                                         $sql = ("SELECT * FROM bodega");
@@ -936,11 +932,38 @@ include('../../Conexion/conexion.php');
                                                         </div>
                                                         <div class="form-row">
                                                             <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Alerta Stock: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-images"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control-file" name="stock">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
                                                                 <label for="inputRegion">Imagen: </label>
                                                                 <div class="input-group-prepend">
                                                                     <div class="input-group-text"><i class="fas fa-images"></i>
                                                                     </div>
                                                                     <input type="file" class="form-control-file" name="img">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Stock Mínimo: </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-images"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control-file" name="Stockminimo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputRegion">Valor Unitario : </label>
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text"><i class="fas fa-images"></i>
+                                                                    </div>
+                                                                    <input type="number" class="form-control-file" name="valorUni">
                                                                 </div>
                                                             </div>
 
@@ -1155,7 +1178,7 @@ include('../../Conexion/conexion.php');
     <!-- ./wrapper -->
 
     <!-- REQUIRED SCRIPTS -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="../../recursos/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../../recursos/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1205,6 +1228,12 @@ include('../../Conexion/conexion.php');
             });
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#categoria")
+        });
+    </script>
+
 </body>
 
 </html>

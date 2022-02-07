@@ -1,0 +1,17 @@
+subcategoria =
+<select class="form-control" id="subcategoria" name="subcategoria">
+    <!-- php aquí -->
+    <?php
+    $sql = ("SELECT * FROM subcategoria");
+    $query = $conn->query($sql);
+
+    while ($valores = mysqli_fetch_array($query)) {
+        $var = $valores['id_Categoria'];
+        $sql2 = ("SELECT * FROM categoria WHERE id_Categoria =$var");
+        $query2 = $conn->query($sql2);
+        $valor = mysqli_fetch_array($query2);
+        if ($valores['id_Categoria'] == $valor['id_Categoria'])
+            echo '<option value="' . $valores['id_subcategoria'] . '">' . $valores['NombreSubcategoria'] . '</option>';
+    }
+    ?>
+</select>
