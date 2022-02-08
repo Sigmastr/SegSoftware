@@ -160,7 +160,7 @@ include('../../Conexion/conexion.php');
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="../Adquisiciones/IngresarCompra.php" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Ingresar Compra</p>
                   </a>
